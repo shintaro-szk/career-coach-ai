@@ -6,7 +6,7 @@ Voice-enabled AI career guidance platform with multi-language support.
 
 **Archived**
 
-This project was built for rapid prototyping as an entry for the AIC Internal Competition 2026-2027: Agentic AI. The competition required participants to be undergraduate students from SBU. The author is not eligible to participate as an outsider. This resulted in archiving the project.
+Developed an autonomous Agentic AI system originally designed as a proof-of-concept. Project was later archived as an independent build due to institutional eligibility criteria.
 
 The competition challenged participants to build agentic AI systems that can act autonomously. The goal was to create AI that takes a goal, determines required actions, uses tools or external information, and executes multiple steps to complete tasks.
 
