@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Career Coach AI
 
-## Getting Started
+Voice-enabled AI career guidance platform with multi-language support.
 
-First, run the development server:
+## Overview
+
+Career Coach AI provides personalized career guidance through voice interaction. Users speak to an AI coach that analyzes their profile and creates actionable career roadmaps. The system supports English, Mandarin, Hindi, and Spanish.
+
+## Features
+
+- Voice-first interaction using speech recognition
+- AI-powered career analysis and planning
+- Multi-language support (English, Mandarin, Hindi, Spanish)
+- Personalized career roadmaps with specific action steps
+- Timeline-based goal tracking
+- Resource recommendations
+
+## Tech Stack
+
+### Frontend
+- Next.js 16 with App Router
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Radix UI components
+
+### Backend & AI
+- OpenAI API for AI responses
+- ElevenLabs for text-to-speech
+- MongoDB with Mongoose for data persistence
+- Express.js API routes
+
+### Voice
+- React Speech Recognition for voice input
+- ElevenLabs for voice output
+
+## Prerequisites
+
+- Node.js 20 or higher
+- MongoDB instance (local or cloud)
+- OpenAI API key
+- ElevenLabs API key
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up environment variables:
+
+Create a `.env.local` file in the root directory:
+
+```env
+OPENAI_API_KEY=your_openai_api_key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
+MONGODB_URI=your_mongodb_connection_string
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── api/           # API route handlers
+├── components/    # React components
+├── lib/          # Utility functions
+├── models/       # Mongoose schemas
+└── page.tsx      # Landing page
+```
 
-## Learn More
+## Data Models
 
-To learn more about Next.js, take a look at the following resources:
+- User: User profiles and preferences
+- Conversation: Chat history with AI coach
+- CareerPlan: Generated career roadmaps
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Run the development server:
 
-## Deploy on Vercel
+```bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Build for production:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```
+
+Run linter:
+
+```bash
+npm run lint
+```
+
+## License
+
+MIT
