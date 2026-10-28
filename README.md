@@ -2,6 +2,14 @@
 
 Voice-enabled AI career guidance platform with multi-language support.
 
+## Project Status
+
+**Archived**
+
+This project was built for rapid prototyping as an entry for the AIC Internal Competition 2026-2027: Agentic AI. The competition required participants to be undergraduate students from SBU. The author is not eligible to participate as an outsider. This resulted in archiving the project.
+
+The competition challenged participants to build agentic AI systems that can act autonomously. The goal was to create AI that takes a goal, determines required actions, uses tools or external information, and executes multiple steps to complete tasks.
+
 ## Overview
 
 Career Coach AI provides personalized career guidance through voice interaction. Users speak to an AI coach that analyzes their profile and creates actionable career roadmaps. The system supports English, Mandarin, Hindi, and Spanish.
@@ -107,4 +115,4 @@ npm run lint
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
